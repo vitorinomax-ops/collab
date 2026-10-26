@@ -1,0 +1,96 @@
+
+alunos = int(input("quantidade de alunos:"))
+monitores = int(input("quantidade de monitores:"))
+
+professores=8
+
+total = alunos + monitores + professores
+
+if total <= 30:
+print("É possível levar todos em uma viagem.")
+else:
+print("Não é possível levar todos em uma viagem. O número excede a capacidade do bondinho.")
+# solicita o número do usuário
+numero = int(input("Digite um número para ver a sua tabuada "))
+print("-" * 18)
+print(f"tabuada do {numero}")
+print("-" * 18)
+
+#Loop para gerar a tabuada de 1 a 10
+for i in range(1, 30):
+resultado = numero * i
+# O :2 serve para alinhar os numeros menores que 10
+print(f"{numero} x {i:2} = {resultado}")
+
+print("-" * 18)
+#1. Definindo os dados (geralmente usamos um dicionario de listas)
+dados = {
+'Produto': ['notebook', 'smartphone', 'teclado mech', 'monitor 4k'],
+'Preco': [5600.00, 2000.00, 398.00, 2800.00],
+'Estoque': [15, 30, 8, 12],
+'Categoria': ['eletronicos', 'eletronicos', 'acessorios', 'eletronicos']
+}
+
+#2. Criando o DataFrame (a tabela propriamente dita)
+import pandas as pd
+df = pd.DataFrame(dados)
+S
+#3. Exibindo a tabela completa
+print("---Tabela completa---")
+print(df)
+print("\n" + "="*40 + "\n")
+
+#4.Operações úteis que o pandas permite fazer facilmente:
+
+#Visualizar apenas uma coluna
+print ("---Apenas a coluna de preços---")
+print(df["Preco"])
+print ("\n" + "="*40 + "\n")
+
+#Filtrar linhas (ex: apenas produtos com estoque menor que 13)
+print("---Produtos com estoque menor que 13---")
+estoque_baixo = df[df["Estoque"] < 13]
+print(estoque_baixo)
+print("\n" + "="*40 + "\n")
+
+#Calcular uma nova coluna (ex: faturamento potencial)
+print("---Tabela com valor total em estoque---")
+df['Total em estoque ($)'] = df['Preco'] * df['Estoque']
+print(df)
+print("\n" + "="*40 + "\n")
+idade = int(input("Digite a sua idade: "))
+
+if idade <= 13:
+
+filme = ["Vingadores", "lorax", "Homem-Aranha"]
+
+print("Filmes Permitidos: \n0-Vingadores\n1-Lorax\n2-Homem-Aranha")
+
+filmes = int(input("Digite o numero correspondente ao filme desejado para seleciona-lo!\n"))
+
+print(f"O filme selecionado foi: {filme[filmes]}")
+
+elif idade >= 14 and idade <= 17:
+
+filme = ["Cabana", "Corra", "Barbie"]
+
+print("Filmes Permitidos: \n0-Cabana\n1-Corra\n2-Barbie")
+
+filmes = int(input("Digite o numero correspondente ao filme desejado para seleciona-lo!\n"))
+
+print(f"O filme selecionado foi: {filme[filmes]}")
+
+elif idade >= 18:
+
+filme = ["Lego Batman", "Homem-Aranha 2", "Homem de Ferro"]
+
+print("Filmes Permitidos: \n0-Lego Batman\n 1-Homem-Aranha 2\n 2-Homem de Ferro")
+
+filmes = int(input("Digite o numero correspondente ao filme desejado para seleciona-lo!\n"))
+
+print(f"O filme selecionado foi: {filme[filmes]}")
+for i in range(1, 21):
+print(f"armário {i}")
+
+for i in range(1, 8):
+print(f"Dia {i} ok {5*i}");
